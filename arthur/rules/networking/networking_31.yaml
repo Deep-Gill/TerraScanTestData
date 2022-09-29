@@ -1,0 +1,6 @@
+resource: aws_security_group
+severity: LOW
+category: NETWORKING
+description: "Ensure every Security Group rule has a description"
+has:
+  - key: ingress.description

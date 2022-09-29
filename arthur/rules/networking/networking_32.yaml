@@ -1,0 +1,7 @@
+resource: aws_cloudfront_distribution
+severity: MEDIUM
+category: NETWORKING
+description: "Ensure CloudFront distribution ViewerProtocolPolicy is set to HTTPS"
+has:
+  - key: "default_cache_behavior.viewer_protocol_policy"
+    range: ["redirect-to-https", "https-only"]

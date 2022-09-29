@@ -1,0 +1,7 @@
+resource: aws_kms_key
+severity: CRITICAL
+category: LOGGING
+description: "Ensure AWS CMK rotation is enabled"
+has:
+  - key: "aws_kms_key"
+    value: true

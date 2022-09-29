@@ -1,0 +1,7 @@
+resource: aws_s3_bucket
+severity: CRITICAL
+category: S3
+description: "Ensure AWS S3 bucket is not publicly writable"
+has_not:
+  - key: "acl"
+    value: "public-read-write"

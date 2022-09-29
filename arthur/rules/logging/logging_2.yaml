@@ -1,0 +1,7 @@
+resource: aws_cloudtrail
+severity: CRITICAL
+category: LOGGING
+description: "Ensure AWS CloudTrail log validation is enabled in all regions"
+has:
+  - key: "enable_log_file_validation"
+    value: true

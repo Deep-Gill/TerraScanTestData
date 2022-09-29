@@ -1,0 +1,7 @@
+resource: aws_globalaccelerator_accelerator
+severity: LOW
+category: LOGGING
+description: "Ensure Global Accelerator has Flow logs enabled"
+has:
+  - key: "attributes.flow_logs_enabled"
+    value: true

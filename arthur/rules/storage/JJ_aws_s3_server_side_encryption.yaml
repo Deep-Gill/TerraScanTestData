@@ -1,0 +1,6 @@
+resource: aws_s3_bucket
+severity: MEDIUM
+category: STORAGE
+has:
+  - key: "server_side_encryption_confirmation"
+ 

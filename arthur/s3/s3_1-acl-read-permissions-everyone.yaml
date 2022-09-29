@@ -1,0 +1,7 @@
+resource: aws_s3_bucket.data
+severity: CRITICAL
+category: S3
+description: "Ensure bucket ACL does not grant READ permission to everyone"
+has_not:
+  - key: "acl"
+    value: "public-read"

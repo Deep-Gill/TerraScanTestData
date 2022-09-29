@@ -1,0 +1,7 @@
+resource: aws_config_configuration_aggregator
+severity: MEDIUM
+category: LOGGING
+description: "Ensure AWS config is enabled in all regions"
+has:
+  - key: "all_regions"
+    value: true

@@ -1,0 +1,6 @@
+resource: aws_vpc
+severity: HIGH
+category: STORAGE
+has:
+  - key: "cidr_block"
+    value: "10.0.0.0"

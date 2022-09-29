@@ -1,0 +1,9 @@
+resource: aws_ecs_cluster
+severity: MEDIUM
+category: LOGGING
+description: "Ensure container insights are enabled on ECS cluster"
+has:
+  - key: "setting.name"
+    value: "containerInsights"
+  - key: "setting.value"
+    value: "enabled"

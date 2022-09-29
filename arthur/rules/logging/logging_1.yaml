@@ -1,0 +1,7 @@
+resource: aws_cloudtrail
+severity: CRITICAL
+category: LOGGING
+description: "Ensure AWS CloudTrail is enabled in all regions"
+has:
+  - key: "is_multi_region_trail"
+    value: true

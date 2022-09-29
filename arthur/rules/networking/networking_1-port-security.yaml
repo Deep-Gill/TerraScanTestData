@@ -1,0 +1,7 @@
+resource: aws_security_group
+severity: MEDIUM
+category: NETWORKING
+description: "Ensure AWS Security Group does not allow all traffic on SSH port 22"
+has_not:
+  - key: "ingress.cidr_blocks"
+    value: "0.0.0.0/0"

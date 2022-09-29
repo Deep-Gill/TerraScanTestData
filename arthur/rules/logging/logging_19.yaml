@@ -1,0 +1,9 @@
+resource: aws_docdb_cluster
+severity: MEDIUM
+category: LOGGING
+description: "Ensure AWS DocumentDB logging is enabled"
+has:
+  - key: "enabled_cloudwatch_logs_exports"
+    range: ["audit", "profiler"]
+
+
